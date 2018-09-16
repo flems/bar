@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-Regular.eot");
+  src: url("fonts/Monitorca-Regular.woff2") format("woff2"), url("fonts/Monitorca-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-Regular.woff") format("woff"), url("fonts/Monitorca-Regular.ttf") format("truetype"), url("fonts/Monitorca-Regular.svg#Monitorca-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-Italic.eot");
+  src: url("fonts/Monitorca-Italic.woff2") format("woff2"), url("fonts/Monitorca-Italic.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-Italic.woff") format("woff"), url("fonts/Monitorca-Italic.ttf") format("truetype"), url("fonts/Monitorca-Italic.svg#Monitorca-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-Bold.eot");
+  src: url("fonts/Monitorca-Bold.woff2") format("woff2"), url("fonts/Monitorca-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-Bold.woff") format("woff"), url("fonts/Monitorca-Bold.ttf") format("truetype"), url("fonts/Monitorca-Bold.svg#Monitorca-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-BoldItalic.eot");
+  src: url("fonts/Monitorca-BoldItalic.woff2") format("woff2"), url("fonts/Monitorca-BoldItalic.eot?#iefix") format("embedded-opentype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Monitorca';
+  src: url("fonts/Monitorca-BoldItalic.woff") format("woff"), url("fonts/Monitorca-BoldItalic.ttf") format("truetype"), url("fonts/Monitorca-BoldItalic.svg#Monitorca-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'handshoptypography';
+  src: url("fonts/handshoptypography.woff") format("woff"), url("fonts/handshoptypography.ttf") format("truetype"), url("fonts/handshoptypography.svg#handshoptypography") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'handshoptypography';
+  src: url("fonts/handshoptypography.eot");
+  src: url("fonts/handshoptypography.woff2") format("woff2"), url("fonts/handshoptypography.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+.production {
+  font-family: 'Monitorca';
+  color: #131313; }
+  .production__list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px; }
+  .production__item {
+    width: 32%;
+    margin: 0.5%; }
+  .production__wrapper {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto; }
+  .production__title {
+    margin: 0;
+    text-align: center;
+    line-height: 1; }
+    .production__title_level_1 {
+      font-size: 98px;
+      color: #581516; }
+    .production__title_level_2 {
+      font-size: 48px; }
+
+.product__container {
+  position: relative; }
+  .product__container_initial {
+    position: initial; }
+
+.product__img {
+  position: relative;
+  padding: 40px 0; }
+  .product__img:before {
+    content: '';
+    display: block;
+    background: #eee;
+    height: 100%;
+    width: 47%;
+    min-width: 200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1; }
+  .product__img_eldo:before {
+    background: #581516; }
+  .product__img_selor:before {
+    background: #d1a485; }
+  .product__img_pirso:before {
+    background: #2e261e; }
+  .product__img img {
+    width: 100%; }
+
+.product__info {
+  text-align: center;
+  line-height: 1; }
+
+.product__name {
+  font-size: 60px;
+  margin: 0; }
+  .product__name_eldo {
+    color: #581516; }
+  .product__name_selor {
+    color: #d1a485; }
+  .product__name_pirso {
+    color: #2e261e; }
+
+.product__sort {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 10px; }
+
+.product-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  color: #fff;
+  bottom: 0;
+  right: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .product-popup__content {
+    padding: 70px 0;
+    background: #581516;
+    width: 100%; }
+  .product-popup_active {
+    -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .product-popup__title {
+    display: inline-block;
+    text-align: center; }
+    .product-popup__title-sort {
+      font-size: 30px; }
+    .product-popup__title-name {
+      font-size: 60px; }
+  .product-popup__wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .product-popup__img {
+    width: 55%; }
+    .product-popup__img img {
+      width: 100%;
+      display: block; }
+  .product-popup__info {
+    width: 45%;
+    max-width: 640px;
+    padding: 30px;
+    position: relative;
+    padding-bottom: 80px; }
+  .product-popup__decription {
+    font-size: 24px;
+    margin: 0;
+    padding: 40px 0;
+    position: relative;
+    margin-top: 40px; }
+    .product-popup__decription:before {
+      content: '';
+      background: #d1a485;
+      width: 60%;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block; }
+  .product-popup__props {
+    color: #d1a485;
+    font-size: 18px;
+    line-height: 1.5; }
+  .product-popup__btn {
+    position: absolute;
+    bottom: 2px;
+    left: 30px;
+    border: none;
+    background: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Monitorca'; }
+    .product-popup__btn svg {
+      width: 64px;
+      height: 64px;
+      fill: #fff;
+      margin-right: 15px; }
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
